@@ -15,14 +15,15 @@ const Header = () => {
                 </Link>
                 <nav>
                     <Link href='/' className={cn('nav-link', {
-                        'is-active': pathname == '/',
+                        'is-active': pathname === '/',
                         'is-home': true
                     })}>Home</Link>
 
                     <p>Search Modal</p>
 
-                    <Link href="/coins"className={cn('nav-link', {
-                        'is-active': pathname == '/coins',
+                    <Link href="/coins" className={cn('nav-link', {
+                        'is-active': pathname === '/coins',
+                        'is-home': false
                     })}>All Coins</Link>
                 </nav>
             </div>
